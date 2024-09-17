@@ -18,6 +18,11 @@ const imgs = {
 
 const codes = {
   'TEST123': 500,
+  'LMNT': 5500,
+}
+
+const codeValidity = {
+  'TEST123': new Date('2024-09-17 17:05:00').getTime() / 3600,
 }
 
 let mainType;
@@ -64,6 +69,12 @@ function applyCode() {
   errorMsg.innerHTML = '';
   if (!discount) {
     errorMsg.innerHTML = 'Invalid coupon!';
+    return;
+  }
+  const validCode = codeValidity[code];
+  if (parseInt(new Date().getTime() / 3600) > validCode) {
+    errorMsg.innerHTML = 'Code expired!';
+    return;
   }
   const basePrice = price[mainType];
   const discountedPrice = basePrice - discount;
