@@ -33,6 +33,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCgTEGEXanj7CT9w_dbWfDYFkOPFENRFQ&libraries=places"></script>
       <script src="js/maps.js"></script>
+      <script src="js/searchBar.js"></script>
    </head>
    <body>
       <!-- header section start -->
@@ -102,6 +103,19 @@
          <div class="banner_section layout_padding">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
+                  <div class="search-bar">
+<!--                     <label for="category">Choose a car:</label>-->
+<!--                     <select name="category" id="category">-->
+<!--                        <option value="all" selected>All</option>-->
+<!--                        <option value="home">Home</option>-->
+<!--                        <option value="about">About</option>-->
+<!--                        <option value="services">Services</option>-->
+<!--                        <option value="blog">Blog</option>-->
+<!--                        <option value="contact">Contact</option>-->
+<!--                     </select>-->
+                     <input type="search" id="searchBar" placeholder="Start by typing here..." oninput="searchInput()">
+                     <div id="searchResults" class="search-results"></div>
+                  </div>
                   <div class="carousel-item active">
                      <div class="container">
                         <h1 class="banner_taital">Adventure</h1>

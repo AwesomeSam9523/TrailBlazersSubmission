@@ -11,9 +11,9 @@ const price = {
 }
 
 const imgs = {
-  rafting: '/html/images/img-1.png',
-  hiking: '/html/images/img-2.png',
-  camping: '/html/images/img-3.png',
+  rafting: 'file:///D:/TrailBlazer/TrailBlazer/html/images/img-1.png',
+  hiking: 'file:///D:/TrailBlazer/TrailBlazer/html/images/img-2.png',
+  camping: 'file:///D:/TrailBlazer/TrailBlazer/html/images/img-3.png',
 }
 
 const codes = {
