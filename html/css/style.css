@@ -1113,3 +1113,103 @@ h2, h3 {
     max-height: 370px;
     overflow-y: scroll;
 }
+
+.payment-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-left {
+    width: 60%;
+}
+
+.modal-right {
+    width: 40%;
+}
+
+.payment-label {
+    font-weight: bold;
+    font-size: large;
+}
+
+.left-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.payment-img {
+    width: 150px;
+    height: 150px;
+}
+
+.package-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.holder > label, .price-holder > label {
+    margin-bottom: 0;
+    margin-left: .5rem;
+}
+
+.price {
+    font-size: larger;
+    font-weight: bolder;
+    color: #0056b3;
+}
+
+.package-desc {
+    font-size: large;
+}
+
+.right-basic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.right-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.btn-apply {
+    background-color: #2b2278;
+    color: #ffffff;
+}
+
+.coupon-holder {
+    margin: 10px 0;
+    font-size: small;
+}
+
+.left-text {
+    font-weight: bold;
+}
+
+#errorMsg {
+    color: red;
+    font-size: smaller;
+}
+
+#totalValue {
+    font-weight: bold;
+}
+
+#couponCode {
+    border-radius: 15px;
+    padding: 0 5px;
+}
